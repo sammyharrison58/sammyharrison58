@@ -34,5 +34,5 @@ while guess != number:
         print("Congratulations! You guessed it right.")
     guess = int(input("Enter a number between 1 and 100: "))
     print("Congratulations! You guessed it right.")
-67
+       
     
