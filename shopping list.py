@@ -35,15 +35,17 @@ for i in range(num_items):
 total_cost = sum(shopping_cart_prices)
 total_cost = round(total_cost, 2)
 total_cost = int(total_cost)
-Discount = 0.1 * (total_cost)
+discount_amount = (10 / 100) * total_cost
+total_cost = total_cost - discount_amount
 if total_cost < 100:
     print("You are not eligible for a discount")
 if age < 18:
-    total_cost = total_cost - Discount
+    total_cost = total_cost - discount_amount
 elif age >= 18:
     print("You are eligible for a discount")
-    total_cost = total_cost 
-print(Discount)
+    total_cost = total_cost
+print (f"your discpount amount is: ${discount_amount}")
+print(f"Total cost after discount: ${total_cost}")
 print(f"hello {name}, welcome to the system")
 print(f"you are {age} years old")
 print(f"the total cost of {shopping_cart} is {total_cost}")
