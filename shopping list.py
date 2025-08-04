@@ -33,6 +33,15 @@ for i in range(num_items):
     shopping_cart_prices.append(price)
 # Calculate the total cost
 total_cost = sum(shopping_cart_prices)
+Discount = 0.01 * int(total_cost)
+if total_cost < 100:
+    print("You are not eligible for a discount")
+if age < 18:
+    total_cost = total_cost - Discount
+elif age >= 18:
+    print("You are eligible for a discount")
+    total_cost = total_cost 
+print(Discount)
 print(f"hello {name}, welcome to the system")
 print(f"you are {age} years old")
 print(f"the total cost of {shopping_cart} is {total_cost}")
