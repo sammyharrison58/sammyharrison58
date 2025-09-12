@@ -32,22 +32,22 @@ if Seating.lower() in ['a']:
     print("Here are the candidates for prime minister:")
     print("1) John")
     print("2) son") 
-prime_minister=input("please enter the name of the candidate you want to vote for: ")
-if Seating.lower() in ['b']:
+    print(prime_minister=input("please enter the name of the candidate you want to vote for: "))
+elif Seating.lower() in ['b']:
     print("Here are the candidates for vice president:")
     print("1) Mike")
     print("2) Ike")
-vice_president=input("please enter the name of the candidate you want to vote for: ")
-if Seating.lower() in ['c']:
+    print (vice_president=input("please enter the name of the candidate you want to vote for: "))
+elif Seating.lower() in ['c']:
     print("Here are the candidates for mayor:")
     print("1) Sarah")
     print("2) Lara")
-mayor=input("please enter the name of the candidate you want to vote for: ")
-if Seating.lower() in ['d']:  
+    print (mayor=input("please enter the name of the candidate you want to vote for: "))
+elif Seating.lower() in ['d']:  
     print("Here are the candidates for governor:")
     print("1) Tom")
     print("2) Jerry")
-governor=input("please enter the name of the candidate you want to vote for: ")
+    print (governor=input("please enter the name of the candidate you want to vote for: "))
 print("Thank you for voting!")
 
 
