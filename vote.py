@@ -4,7 +4,7 @@ if len(username) < 12:
 elif not username.find(" ") == -1:
     print("username must not contain spaces.")
 elif not username.isalpha():
-    print("Your username cant contain numbers ")
+    print("Your username cant contain number1`  3   s ")
 else:
     print(f"welcome {username }")  
 age = int(input("Enter your age: "))

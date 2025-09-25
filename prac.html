@@ -1,0 +1,39 @@
+EMPIRE html>
+<html>
+<head>
+  <title>Animated Page</title>
+ <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+       color: white;
+      font-size: 2em;
+      animation: bgChange 8s infinite alternate;
+   }
+
+   @keyframes bgChange {
+    0%   { background-color: #7c7676; }  
+    25%  { background-color: #201a02; }  
+    50%  { background-color: #609260; }  
+     75%  { background-color: #04254950; }  
+      100% { background-color: #6da5a5; }  
+    }
+
+    h1 {
+      animation: textMove 4s infinite alternate;
+    }
+
+  @keyframes textMove {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+  }
+</style>
+</head>
+<body>
+ <h1>Hello, this page has animation!</h1>
+</body>
+</html>
