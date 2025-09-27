@@ -53,3 +53,4 @@ print(f"the total cost of {shopping_cart} is {total_cost}")
 # this is a comment
 print("nice having you here, welcome back {name}")
 
+

@@ -1,20 +1,78 @@
+
 <!DOCTYPE html>
 <html>  
 <head>
-    <title><u> PIXELS <u></title>
+    <title><u> <u>PIXELS</u></title>
     <style>
         body{
-            background-color: aqua;
+            background-color: rgb(24, 27, 27);
             color: white;
-            font-family: Arial, sans-serif;
+            font-size: 20px;
+            font-family: Arial,Arial, Helvetica, sans-serif;
+            animation:bgchange 30s infinite alternate;
         }
+                @keyframes bgchange {
+                0% {background-color: #503e3e;}
+                50% {background-color:#302c2c;}
+                100% {background-color:rgb(146, 146, 135);}
+                75%{background-color:rgb(28, 34, 28);}
+                25%{background-color:rgb(21, 21, 49);
+                
+                }
+            }
+            
+        
             
         </style>
 
 </head>
 <body>
-    <h1>Welcome to PIXELS</h1>  
+    <h1> <style> 
+h1 {text-align: center;
+color:blue;
+font-size: 50px;
+font-family: 'Courier New', Courier, monospace;
+text-shadow: 2px 2px 4px #000000;
+ animation: textmove 20s , bounce 5s ease-in-out infinite, fadeIn 7s ease-in-out,
+    infinite alternate;
+        }            
+        @keyframes textmove{
+            0% {color: rgb(39, 39, 109); transform: translateY(0);}
+            25% {color: rgb(5, 53, 53); transform: translateY(-10px);}
+            50% {color: rgb(5, 53, 5); transform: translateY(-15px);}
+            75% {color: rgb(53, 53, 5); transform: translateY(-10px);}
+            100% {color: rgb(34, 24, 24); transform: translateY(-20px);}
+
+}
+</style><u> 
+      WE ARE PIXELS </u> </h1>  
+    <p><i>This is where greatt minds are built </i> </p>
+         <img src="there.jpg" alt="Description of the image" width="150",length="150" class="animated-image"
+            style="display: block; border: 2px solid #000; border-radius: 5px;"
+    >
+    <style> 
+    img.animated-image {
+        animation: fadeIn 10s ease-in-out, bounce 5s ease-in-out infinite;
+    }
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+        25% { transform: translateY(-10px);}
+    }
+</style>
+   
+</body>
+         <p><i> we do more as u can see</i></p>
+        
 
 </body>
-    
+
 </html>
+
+    
+
