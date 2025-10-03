@@ -1,0 +1,433 @@
+
+@font-face {
+    font-family: RobotoMono;
+    src: url(RobotoMono-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: RobotoMono;
+
+}
+body{
+    background-color: rgb(42, 50, 61);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+nav .header{
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+}
+nav .right{
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+nav .left .list{
+    display: flex;
+    list-style: none
+}
+ .list  li a{
+    padding: 10px;
+    list-style-type: none;
+    /* border: 2px solid red; */
+    color: rgb(252, 247, 247);
+    text-decoration: none;
+    font-size: 20px;
+}
+.icons i{
+    color: rgb(141, 68, 68);
+    padding: 10px;
+    align-items: center;
+
+}
+.list  li a:hover{
+    color: chocolate;
+}
+section{
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 50px;
+    margin-left: 60px;
+    position: sticky;
+    /* border: 2px solid red; */
+    
+}
+.image img{
+    width: 40vw;
+    height: 70vh;
+    object-fit: contain;
+}
+section .lil h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: 2s;
+}
+section .lil h1:hover{
+    transform: scale(1.2);
+    color: brown;
+    transition: 2s;
+}
+ .small{
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+.lil button a{
+    margin-top: 20px;
+    border:2px solid grey;
+    color: chocolate;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.design h6{
+   color: chocolate; 
+}
+.design h1{
+    color: white;
+    margin-top: 5px;
+    font-size: 30px;
+    transition: 2s;   
+
+}
+.design h1:hover{
+ 
+    transform: scale(1.2);
+    color: brown;
+    transition: 2s;   
+}
+.design p{
+    margin-top: 5px;
+}
+.design small  a{
+    margin-top: 10px;
+    color: chocolate;
+    text-decoration: none;
+    /* list-style-type: none; */
+}
+.design i{
+    position: fixed;
+    bottom: 200px;
+    right: 0;
+    padding: 10px;
+    margin-right: 50px;
+    font-size: 30px;
+    color: white;
+}
+article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+ .skill{
+    /* border: 2px solid red; */
+    display: flex;
+    margin-right: 50px;
+    /* padding: 20px; */
+}
+.skill .btn{
+    padding: 20px;
+    /* margin-right: 50px; */
+    /* border: 2px solid red; */
+    background-color: rgb(90, 89, 89);
+    /* color:white; */
+    width: 20vw;
+    height: 30vh;
+    font-size: 30px;
+    overflow: none;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.skill .btn i{
+    margin-left: 50px;
+    margin-top: 30px;
+    background: none;
+    font-size: 50px;
+} 
+.skill .btn h5, small{
+    background: none;
+}
+ .me h6, h1{
+    /* margin-left: 50px; */
+    /* border: 2px solid red; */
+    padding: 5px;
+    /* text-align: center; */
+
+}
+.me h6{
+    color: chocolate;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 20px;   
+}
+.me h1{
+    font-size: 40px;
+    color: white;
+}
+.exp{
+    display: flex;
+    /* border: 2px solid blue; */
+    margin: 0;
+}
+.exp .btcm{
+    padding: 50px;
+    /* border: 2px solid blue; */
+    font-size: 50px;    
+    place-content: center; 
+    color: chocolate; 
+}
+.exp .btcm:nth-child(1){
+    /* margin-left: 20px; */
+    /* border: 2px solid blue; */
+    margin-right: 100px;
+    align-items: center;
+    top: 10px;
+}
+
+.exp .btcm:nth-child(2){
+    /* margin-left: 20px; */
+    /* border: 2px solid blue; */
+    margin-right: 100px;
+    align-items: center;
+    top: 10px;  
+}
+
+.exp .btcm:nth-child(3){
+    /* margin-left: 20px; */
+    /* border: 2px solid blue; */
+    margin-right: 100px;
+    align-items: center;
+    top: 10px;
+    
+}
+.exp .btcm h5{
+    font-size:20px;
+    color: white;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.big h6{
+    text-align: center;
+    color: chocolate;
+    margin-right: 110px;
+}
+.big h1{
+    margin-left: 50px;
+    color: white;
+    transition: 2s;
+
+}
+.big h1:hover{
+    color: darkkhaki;
+    margin-left:5px;
+    transition: 2.5s;
+    cursor: pointer;
+}
+.cas{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+    list-style-type: none;
+    margin-right: 50px;
+}
+.cas li a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+.cas li a:hover{
+    text-decoration: underline;
+    color: chocolate;
+}
+.picture{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.picture  img{
+    width: 30vw;
+    height: 60vh;
+    padding: 10px;
+}
+.pic-2 img{
+    width: 40vw;
+    height: 121vh;
+}
+.pic-3 img{
+    
+    width: 27vw;
+    height: 121vh;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom .lit{
+    text-align: center;
+    margin-top: 20px;
+}
+.bottom .lit h6{
+    color: chocolate;
+}
+.bottom .lit h1{
+    color: white;
+    transition: 2s;
+
+}
+.bottom .lit h1:hover{
+    transform: scale(1.2);
+    transition: 2s;
+    color: brown;
+}
+.photo {
+    
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.photo h2{
+    color: chocolate;
+}
+.photo img{
+    padding: 10px;
+}
+.photo .poc-1 img{
+    
+    width: 20vw;
+    height: 30vh;
+}
+
+.photo .poc-2 img{
+    
+    width: 20vw;
+    height: 30vh;
+}
+
+.photo .poc-3 img{
+    
+    width: 20vw;
+    height: 30vh;
+}
+
+.photo .poc-4 img{
+    
+    width: 20vw;
+    height: 30vh;
+}
+
+.photo .poc-5 img{
+    
+    width: 20vw;
+    height: 30vh;
+}
+
+.other  {
+    display:flex;
+    /* flex-direction: column; */
+    /* border: 2px solid blue; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* display: inline-block; */ 
+} 
+.poc-1,.poc-2,.poc-3,.poc-4,.poc-5,.poc-6{
+    position:relative;
+
+}
+
+.photo .small{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    
+}
+.photo a{
+    color: chocolate;
+    text-decoration: none;
+}
+.photo i{
+    margin-left: 10px;
+    color: chocolate;
+}
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: grey;
+    /* border: 2px solid red; */
+}
+.foot h6{
+    color: chocolate;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 50px;
+}
+.foot h1{
+    color: white;
+    margin-left: 20px;
+}
+.contacts{
+    margin-top: 20px;
+}
+.contacts i{
+    padding: 10px;
+    /* border: 2px solid red; */
+    color: white;
+    background: darkgray;
+    margin-bottom: 10px;
+    /* gap: 15px; */
+    
+}
+.contacts i a{
+    /* border: 2px solid red; */
+    color: chocolate;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 10px ;
+    font-size: 20px;
+    /* gap: 15px; */
+}
+.down{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.down a{
+    margin-right: 100px;
+    color: lightgray;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 15px;
+}
+.down a:hover{
+    text-decoration: underline;
+}
+hr{
+    font-size: 20px;
+    width: 100vw;
+}
+.copy{
+    margin-top: 5px;
+    color: lightgray;
+    margin-right: 60px;
+}

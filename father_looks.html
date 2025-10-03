@@ -27,10 +27,28 @@
                     bottom: 0;
                     width: 100%;
                 }
-                 nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+                }
+            
+                nav .header{
+    margin-left: 50px;
+    color: rgb(105, 83, 49);
+    font-size: 40px;
+}
+
+nav .right{
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+    }
+section{
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 50px;
+    margin-left: 30px;
+    position: sticky;
+    /* border: 2px solid red; */
+    
+}
 
         nava {
             font-family: "Algerian", serif;
@@ -44,8 +62,54 @@
         navahover {
             color: #007bff;
         }
-    }           
-        
+        nav .right {
+            float: right;
+
+            
+}
+.design h6{
+   color: chocolate; 
+}
+.design h2{
+    color: white;
+    margin-top: 5px;
+    font-size: 30px;
+    transition: 2s;   
+
+}
+.design h2:hover{
+ 
+    transform: scale(1.2);
+    color: brown;
+    transition: 2s;   
+}
+.design p{margin-top: 5px;
+    color: rgb(189, 189, 189);
+    font-size: 15px;
+}
+.image img{
+    width: 370px;
+    height: 370px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    animation: bounce 5s ease-in-out infinite;
+}
+nav.small{
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.icons i{
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}         
+
             
         </style>
 
@@ -88,10 +152,42 @@ text-shadow: 2px 2px 4px #000000;
  style="margin: left 40px;;">WELCOME TO PIXELS.COM
     </h1>  
      <nav>
-        <a href="index.html">Home</a>
+       
+        <a href="#">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
+        <div class="right">
+         </ul>
+    <div class="icons">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    </div>
+</div>
+
+         <div class="header">
+    <h2>FL<sub>s</sub>.</h2>
+        <section>
+         <div class="header">
+        <h2>FATHER<br>LOOKS.</h2>
+        <br>
+        <div class="small">
+        <small>Instagram | LinkedIn</small> <br>
+        <small>Benhance | Dribble</small> <br>
+        </div>
+        <button> <a href="#">CONTACT ME</a></button>
+    </div>
+    <div class="image">
+        <img src="boom.jpg">
+    </div>
+    <div class="design">
+        <h6>INTRODUCTION</h6>
+        <h2>UI/UX Designer, <br>Full Stack Web <br>Developer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Soluta illo harum tempore aliquam quibusdam laborum, ipsum asperiores <br> veritatis nemo non, voluptas porro numquam.</p>
+        <small> <a href="#"><h5>Learn more</h5></a></small>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i> 
+    </div>
+</section> 
 
     </nav>`
     <p><i>Get unlimited customized solutions for your</i> </p>
