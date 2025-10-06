@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+   
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icon scout -->
@@ -15,60 +17,59 @@
 <body>
      <h2> <style> 
 h2 {text-align: center;
-color:rgb(20, 20, 36);
+color:rgb(20, 20, 36)px;;
 font-size: 50px;
-background: #233744;
+background: #2b302d;
 width: 100%;
+height: 100%;
 font-family: "Algerian", serif !important;
-text-shadow: 2px 2px 4px #000000;
- animation: textmove 20s,
-    infinite alternate;
-        }            
-        @keyframes textmove{
-            0% {color: rgb(39, 39, 109); transform: translateY(0);}
-            25% {color: rgb(5, 53, 53); transform: translateY(-10px);}
-            50% {color: rgb(5, 53, 5); transform: translateY(-15px);}
-            75% {color: rgb(43, 43, 27); transform: translateY(-10px);}
-            100% {color: rgb(34, 24, 24); transform: translateY(-20px);}
-             }
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-        50% { opacity: 1.5; }
-        25% { opacity: 0.75; }
-        75% { opacity: 0.25; }
-        
+
          
     }
 
 
 </style>
-<h2>
-    
- <img src="../nice.jpg" alt="Description of the image" width="90"
- style="margin: left 40px;;">WELCOME TO PIXELS.COM
+     <h2>
+WELCOME TO PIXELS.COM
 </h2>
 <nav>
     <div class="left">
     <ul class="list">
         <li><a href="#">Home</a></li>
         <li><a href="../about.html">ABOUT</a></li>
-        <li><a href="#">BLOG</a></li>
+        <li><a href="../services.html">SERVICES</a></li>
         <li><a href="home.docx">PAGES</a></li>
         <li><a href="../contact.html">CONTACTS</a></li>
     </ul>
-    <div class="icons">
-    <i class="fa-brands fa-facebook-f"></i>
-    <i class="fa-brands fa-twitter"></i>
     </div>
+     <div class="n">
+       <button>SIGHN IN</button>
+        <input
+         placeholder="Enter your email"
+         class="form-input flex w-half min-w-0 flex-0.5 resize-none overflow-hidden rounded-x0.5 text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-full placeholder:text-[#637588] px-[15px] rounded-r-none border-r-0 pr-1 rounded-0.5-none border-0.5-0 pl-1 text-sm font-normal leading-normal @[480px]:text-base @[360px]:font-normal @[360px]:leading-normal"
+             value=""  
+                     />
+            
+                   
+    </div>
+    <div class="n">
+        <button>LOG IN</button>
+        <input
+         placeholder="Enter your email"
+         class="form-input flex w-half min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-full placeholder:text-[#637588] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[3600px]:font-normal @[3600px]:leading-normal"
+             value=""  
+                     />
+    </div>
+</nav>
+<nav>
 <div class="header">
     <h1>FL<sub>s</sub>.</h1>
 </div>
-
+</nav>
 </div>
 </nav>   
 <section>
-    <div class="FATHER LOOKS">
+    <div class="lil">
         <h1>FATHER<br>LOOKS.</h1>
         <div class="small">
         <small>Instagram | LinkedIn</small> <br>
@@ -77,7 +78,7 @@ text-shadow: 2px 2px 4px #000000;
         <button> <a href="../contact.html">CONTACT ME</a></button>
     </div>
     <div class="image">
-        <img src="images/11.jpg"alt="Description of the image" class="animated-image"
+        <img src="../boom.jpg"alt="Description of the image" class="animated-image"
             
     >
     <style> 
@@ -164,11 +165,11 @@ text-shadow: 2px 2px 4px #000000;
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia maiores omnis minus quos excepturi  <br>iusto laudantium neque, a possimus vitae tenetur repellendus, sint eaque atque impedit <br> aperiam labore ducimus incidunt.</p>
         </div>
         <ul class="cas">
-            <li><a href="#">All</a></li>
-            <li><a href="#">UI/UX</a></li>
-            <li><a href="#">WEB DEVELOPMENT</a></li>
-            <li><a href="#">WEB RESEARCH</a></li>
-            <li><a href="#">MARKETING</a></li>
+            <li><a href="../services.html">All</a></li>
+            <li><a href="../services.html">UI/UX</a></li>
+            <li><a href="../services.html">WEB DEVELOPMENT</a></li>
+            <li><a href="../about.html">WEB RESEARCH</a></li>
+            <li><a href="../services.html">MARKETING</a></li>
         </ul>
         <div class="picture">
             <div class="pic-1">
@@ -195,7 +196,7 @@ text-shadow: 2px 2px 4px #000000;
             <div class="poc-1">
                 <div class="small">3 september 2025</div>
                 <img src="images/4.jpg">
-                <h2>Welcome to Jeky!!Go <br>ahead and edit</h2>
+                <h3>Welcome to Jeky!!Go <br>ahead and edit</h3>
                 <p>You'll find this post in your _posts <br>directory Go ahead and edit it and re- <br>build the site to see your changes
                 .You <br>can rebulid the..</p>
                 <small> <a href="#">Read More</a><i class="fa-solid fa-angle-right"></i></small>
@@ -204,7 +205,7 @@ text-shadow: 2px 2px 4px #000000;
         <div class="poc-2">
             <div class="small">4 september 2025</div>
             <img src="images/5.jpg">
-            <h2>WordPress hostin manage <br>your growth Nullam</h2>
+            <h3>WordPress hostin manage <br>your growth Nullam</h3>
             <p>Must explain to you how all this mistakers<br>idea of denouncing pleasure and<br>praising pain was born and
             i will give<br>you a complete account..</p>
             <small> <a href="#">Read More</a><i class="fa-solid fa-angle-right"></i></small>
@@ -213,26 +214,243 @@ text-shadow: 2px 2px 4px #000000;
     <div class="poc-3">
         <div class="small">5 september 2025</div>
         <img src="images/6.jpg">
-        <h2>Html5 Static Site <br>Generator for..</h2>
+        <h3>Html5 Static Site <br>Generator for..</h3>
         <p>Html5 Static Site <br>Generator for All amet</p>
 </div>
 
 <div class="poc-4">
     <div class="small">6 september 2025</div>
     <img src="images/14.jpg">
-    <h2>Just Trying And<br>Enjoying magna..</h2>
+    <h3>Just Trying And<br>Enjoying magna..</h3>
     <p>Html5 Static Site <br>Generator for All amet</p>
 </div>
 
 <div class="poc-5">
     <div class="small">7 september 2025</div>
     <img src="images/15.jpg">
-    <h2>Easly choose from <br>thousan of...</h2>
+    <h3>Easly choose from <br>thousan of...</h3>
     <p>Html5 Static Site <br>Generator for All amet</p>
 </div>
     </div>
         </div>
     </div>
+            WHY PIXELS ?
+                </h1>
+                <p class="text-[#111418] text-base font-normal leading-normal max-w-[720px]">
+                  We believe that great servises should be accessible to everyone. That's why we offer high-quality, well-crafted desighns and websites at an honest price. We're committed to creating
+                  websites,desighns, posters and web pages that look spectacular, feel right , and do more than meet your. expectation!.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image:url("../flp.jpg");'
+                  ></div>
+                  <div>
+                    <p class="text-[#111418] text-base font-medium leading-normal">Elevated Essentials</p>
+                    <p class="text-[#637588] text-sm font-normal leading-normal">Thoughtfully designed for all </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("../seek.jpg");'
+                  ></div>
+                  <div>
+                    <p class="text-[#111418] text-base font-medium leading-normal">Sustainable designs</p>
+                    <p class="text-[#637588] text-sm font-normal leading-normal">Crafted from eco-friendly people</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/f73713d6-6661-4cea-8eef-607df85c836d.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#111418] text-base font-medium leading-normal">Modern websites</p>
+                    <p class="text-[#637588] text-sm font-normal leading-normal">desighnde to outlive, modern spectrate</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/5bc81c57-6307-4361-a2be-3368af16e291.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#111418] text-base font-medium leading-normal">Comfortable and Classics</p>
+                    <p class="text-[#637588] text-sm font-normal leading-normal">Relaxed designs for everyday comfort</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">What our customers are saying</h3>
+            <div class="flex flex-col gap-8 overflow-x-hidden bg-white p-4">
+              <div class="flex flex-col gap-3 bg-white">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/565ceba1-6f80-41e6-9f66-d18c23ff690f.png");'
+                  ></div>
+                  <div class="flex-1">
+                    <p class="text-[#111418] text-base font-medium leading-normal">Gladys W.</p>
+                    <p class="text-[#637588] text-sm font-normal leading-normal">June 2, 2025</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-[#111418] text-base font-normal leading-normal">
+                  I've been a pixels customer for a year now, and I'm always impressed with the quality of their desighns. The fit is perfect, meet the recommendations and
+                  exceed, and the styles are versatile. Plus, they're committed to sustainability, which is important to me. I highly recommend PIXELS to anyone
+                  looking for stylish, eco-friendly desighns at a fair price.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3 bg-white">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/fcf4320e-802e-4b4b-94e3-e306d6863334.png");'
+                  ></div>
+                  <div class="flex-1">
+                    <p class="text-[#111418] text-base font-medium leading-normal">Brian K.</p>
+                    <p class="text-[#637588] text-sm font-normal leading-normal">May 29, 2024</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-[#111418] text-base font-normal leading-normal">
+                  I recently purchased a few webs from pixels , and I'm extremely satisfied with my experience. The desighns are well-made, and the fit is just right. The
+                  customer service was excellent, too. I had a question about my order, and the team responded quickly and was very helpful. I'll definitely be desighning with
+                pixels again!
+                </p>
+              </div>
+              <div class="flex flex-col gap-3 bg-white">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    style='background-image: url("https://cdn.usegalileo.ai/stability/5a5d47e2-582c-4735-a27d-b6e7c30c3f34.png");'
+                  ></div>
+                  <div class="flex-1">
+                    <p class="text-[#111418] text-base font-medium leading-normal">Faith M.</p>
+                    <p class="text-[#637588] text-sm font-normal leading-normal">May 26, 2023</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="text-[#111418]" data-icon="Star" data-size="20px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-[#111418] text-base font-normal leading-normal">
+                  I'm so happy to have discovered pixels. The web pages are stylish, efficient, and affordable. I appreciate that they offer a wide range of pages and
+                  inclusive neutral designs. The fact that they use sustainable praranamas is a big plus. It's great to see a brand that prioritizes both people and the
+                  their wishes. I'll be a repeat customer for sure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
     <footer>
         <div class="foot">
             <h6>contact us</h6>
@@ -240,6 +458,7 @@ text-shadow: 2px 2px 4px #000000;
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Odit reiciendis ea possimus odio, blanditiis quae ipsum culpa  <br>sapiente dolore rerum debitis quos suscipit distinctio .</p>
         </div>
         <div class="contacts">
+            <div class="text-[#637588]" data-icon="FacebookLogo" data-size="24px" data-weight="regular"> </div>
             <i class="fa-regular fa-envelope"><a href="#">admin@sammyharrison58@gmail.com</a></i>
             <i class="fa-solid fa-phone"><a href="#">+(254)748082906</a></i>
             <i class="fa-solid fa-s"><a href="#">live:shail </a></i> <br>
@@ -259,8 +478,7 @@ text-shadow: 2px 2px 4px #000000;
 </html>
 
 
-}
-</style>
+
 </head>
 <body>
 </body>

@@ -18,9 +18,16 @@ nav{
     justify-content: space-between;
     margin-top: 10px;
 }
-nav .header{
-    margin-left: 50px;
-    color: white;
+nav .header {
+    text-align: left;
+    margin-left: 20px;
+    color: #0e0d0d;
+    font-size: 50px;
+    margin-top: 20px;
+}
+nav .n{
+    margin-right: 50px;
+    color: rgb(97, 104, 98);
     font-size: 20px;
 }
 nav .right{
@@ -68,6 +75,7 @@ section .lil h1{
     font-size: 30px;
     margin-bottom: 10px;
     transition: 2s;
+    font-family: Algerian, serif !important;
 }
 section .lil h1:hover{
     transform: scale(1.2);
@@ -285,7 +293,7 @@ article{
     margin-top: 20px;
 }
 .bottom .lit h6{
-    color: chocolate;
+    color: rgb(51, 83, 24);
 }
 .bottom .lit h1{
     color: white;
@@ -304,8 +312,8 @@ article{
     margin-top: 20px;
     margin-left: 30px;
 }
-.photo h2{
-    color: chocolate;
+.photo h3{
+    color: rgb(107, 170, 5);
 }
 .photo img{
     padding: 10px;
@@ -360,12 +368,12 @@ article{
     
 }
 .photo a{
-    color: chocolate;
+    color: rgb(19, 109, 46);
     text-decoration: none;
 }
 .photo i{
     margin-left: 10px;
-    color: chocolate;
+    color: rgb(45, 83, 23);
 }
 footer{
     display: flex;
@@ -377,7 +385,7 @@ footer{
     /* border: 2px solid red; */
 }
 .foot h6{
-    color: chocolate;
+    color: rgb(11, 75, 11);
     font-size: 20px;
     text-align: center;
     margin-right: 50px;

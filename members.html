@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .team-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .team-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .team-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 50px;
+        }
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        .team-member {
+            text-align: left;
+            position: relative;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .member-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .member-title {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .member-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        /* Subtle gradient overlay for visual effect */
+        .team-member::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body>
+    <section class="team-section">
+        <h1 class="team-title">Meet our team</h1>
+        <p class="team-subtitle">Dedicated professionals driving our style success</p>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="there.jpg" alt="Tony Fred">
+                <div class="member-name">Tony Fred</div>
+                <div class="member-title">Chief Fashion Officer</div>
+                <div class="member-description">Tony is the founder and visionary behind our brand. He is passionate about creating stylish and comfortable clothing and footwear that our customers will love.</div>
+            </div>
+            <div class="team-member">
+                <img src="seek.jpg" alt="Alex To">
+                <div class="member-name">Alex To</div>
+                <div class="member-title">Chief Fashion Officer</div>
+                <div class="member-description">Mich has and has brand. As ensures t</div> <!-- Note: Description is cut off in the image, so placeholder -->
+            </div>
+            <div class="team-member">
+                <img src="flp.jpg" alt="Aline Turner">
+                <div class="member-name">Aline Turner</div>
+                <div class="member-title">Chief Design Officer</div>
+                <div class="member-description">Aline is a fashion expert and leads our team of designers and stylists. She ensures that our collection is always on-trend and of the highest quality.</div>
+            </div>
+            <div class="team-member">
+                <img src="boom.jpg" alt="Iris Jo">
+                <div class="member-name">Iris Jo</div>
+                <div class="member-title">Chief Financial Officer</div>
+                <div class="member-description">John, with industry, stay ahead the lates</div> <!-- Note: Description is cut off in the image, so placeholder -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>

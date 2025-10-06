@@ -1,70 +1,121 @@
 <!DOCTYPE html>
 <html><title> PIXELS.co.ke</title>
+<head>
+     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon scout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- font awsesome -->
+    <script src="https://kit.fontawesome.com/8ef1de9f50.js" crossorigin="anonymous"></script>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
     <style>
+        
         body{
             background-color: rgb(24, 27, 27);
             color: white;
             font-size: 20px;
+            text-align: center;
+            margin-right: 20px;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            animation:bgchange 30s infinite alternate;
+           
         }
-                @keyframes bgchange {
-                0% {background-color: #503e3e;}
-                50% {background-color:#302c2c;}
-                100% {background-color:rgb(59, 59, 53);}
-                75%{background-color:rgb(28, 34, 28);}
-                25%{background-color:rgb(21, 21, 49);
-                }
-                }
                 
-                footer{ 
-                    background: #111010;
-                    color: antiquewhite;
-                    padding: 15px;
-                    position:fixed;
-                    bottom: 0;
-                    width: 100%;
-                    
-        }
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: grey;
+    /* border: 2px solid red; */
+}
+.foot h6{
+    color: rgb(11, 75, 11);
+    font-size: 20px;
+    text-align: center;
+    margin-right: 50px;
+}
+.foot h1{
+    color: white;
+    margin-left: 20px;
+}
+.contacts{
+    margin-top: 20px;
+}
+.contacts i{
+    padding: 10px;
+    /* border: 2px solid red; */
+    color: white;
+    background: darkgray;
+    margin-bottom: 10px;
+    /* gap: 15px; */
+    
+}
+.contacts i a{
+    /* border: 2px solid red; */
+    color: chocolate;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 10px ;
+    font-size: 20px;
+    /* gap: 15px; */
+}
+.down{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.down a{
+    margin-right: 100px;
+    color: lightgray;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 15px;
+}
+.down a:hover{
+    text-decoration: underline;
+}
+hr{
+    font-size: 20px;
+    width: 100vw;
+}
+.copy{
+    margin-top: 5px;
+    color: lightgray;
+    margin-right: 60px;
+}
+                  
+
 </style>
+</head>
 <body>
-    <h1> <style> 
-h1 {text-align:left; 
-color:rgb(20, 20, 36);
-font-size: 30px;
-background: #145386;
-width: 100%;
-border: 2px solid #000;
-border-radius: 5px; 
-padding: 10px;
-margin: 0;
-font-family: "Algerian", serif !important;
-text-shadow: 2px 2px 4px #000000;
- animation: textmove 20s , bounce 5s ease-in-out infinite, fadeIn 10s ease-in-out,
-    infinite alternate;
-        }            
-        @keyframes textmove{
-            0% {color: rgb(39, 39, 109); transform: translateY(0);}
-            25% {color: rgb(5, 53, 53); transform: translateY(-10px);}
-            50% {color: rgb(5, 53, 5); transform: translateY(-15px);}
-            75% {color: rgb(43, 43, 27); transform: translateY(-10px);}
-            100% {color: rgb(34, 24, 24); transform: translateY(-20px);}
-             }
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-        50% { opacity: 1.5; }
-        25% { opacity: 0.75; }
-        75% { opacity: 0.25; }
-    }
 
+    <h1> <style> 
+h1 {text-align: center;
+color:rgb(20, 20, 36)px;;
+font-size: 50px;
+background: #2b302d;
+width: 100%;
+height: 100%;
+font-family: "Algerian", serif !important;
+
+}
 
 </style>
-        <img src="nice.jpg" alt="Description of the image" width="90"
- style="margin: left 40px;;">OUR CONTACTS
+        OUR  CONTACTS @[PIXELS.co.ke]
     </h1>
-     <p><i>You can contact us through!</i> </p>
-         <img src="nice.jpg" alt="Description of the image" width="400",length="400" class="animated-image"
+     <p><i>OUR CONTACTS</i>
+        <br>Phone number: +254 748082906
+        <br>Email:sammyharrison58@gmail.com
+        <br>Location: Nairobi,Kenya
+        <br>Website:www.pixels.co.ke    
+        <br>Instagram: @pixels.kenya
+        <br>Facebook: @pixels.ke
+     </p>
+      <center>   <img src="flp.jpg" alt="Description of the image" width="600",length="400" ,align="center" ,class="animated-image"
             style="display: block; border: 2px solid #000; border-radius: 5px;"
     >
     <style> 
@@ -84,11 +135,65 @@ text-shadow: 2px 2px 4px #000000;
         25% { transform: translateY(-10px);}
 
 }
-</style>
 
-    </body> 
+</style></center>
+<h4> <style> 
+h4 {text-align:left; 
+color:rgb(42, 50, 61);
+font-size: 30px;
+background: #4d4f52;
+width: 100%;
+border: 2px solid #000;
+border-radius: 5px; 
+padding: 10px;
+margin: 0;
+font-family: "Algerian", serif !important;
+text-shadow: 2px 2px 4px #000000;}
+  </style>
+  
+  <h4>  <style> 
+    h4 {text-align:center; 
+color:rgb(42, 50, 61);
+font-size: 30px;
+background: #4d4f52;
+width: 100%;
+border: 2px solid #000;
+border-radius: 5px; 
+padding: 10px;
+margin: 0;
+font-family: "Algerian", serif !important;
+text-shadow: 2px 2px 4px #000000;}</style> <I>OUR INFORMATION</I></h3>
+</h4>
+We are here to assist you with any inquiries or support you may need.<br> Feel free to reach out to us through the provided contact details, and our team will be happy to help you.<br> Your satisfaction is our priority, and we look forward to hearing from you!
+<br>We are committed to providing excellent customer service and ensuring that your experience with us is positive and enjoyable.<br> Thank you for choosing PIXELS.co.ke!<br>
+We value your feedback and suggestions, as they help us improve our services and better meet your needs.<br> Don't hesitate to share your thoughts with us!
+    
+    <img src="seek.jpg" alt="Description of the image" width="600",length="400" ,align="center" ,class="animated-image"
+            style="display: block; border: 2px solid #000; border-radius: 5px;"
+    > 
+</body> 
 
 
-<footer><center> &copy;My website 2025.All Rights reserved.</center></p>
+<footer> <div class="foot">
+            <h6>contact us</h6>
+            <h2>Ways To Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Odit reiciendis ea possimus odio, blanditiis quae ipsum culpa  <br>sapiente dolore rerum debitis quos suscipit distinctio .</p>
+        </div>
+        <div class="contacts">
+            <div class="text-[#637588]" data-icon="FacebookLogo" data-size="24px" data-weight="regular"> </div>
+            <i class="fa-regular fa-envelope"><a href="#">admin@sammyharrison58@gmail.com</a></i>
+            <i class="fa-solid fa-phone"><a href="#">+(254)748082906</a></i>
+            <i class="fa-solid fa-s"><a href="#">live:shail </a></i> <br>
+   <br> <i class="fa-brands fa-twitter"><a href="#">@tortoiz</a></i><br>
+   <br> <i class="fa-solid fa-gear"><a href="">Tortoiz</a></i>
+        </div>
+        <div class="down">
+            <a href="#">WWW.DownloadNewThemes.com</a>        
+        </div>
+        <div class="line"> <hr></div>
+
+        <div class="copy">
+           <p> &copy;copyright-Tortoiz|All Rights Reserved </p>
+        </div>
 </footer>
 </html>
