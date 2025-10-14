@@ -12,6 +12,7 @@
 }
 body{
     background-color: rgb(42, 50, 61);
+    font-size: large;
 }
 nav{
     display: flex;

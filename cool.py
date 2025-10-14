@@ -5,7 +5,7 @@ from py_compile import QUIT, MOUSEBUTTONDOWN, MOUSEBUTTONUP
 py_compile.init()
 #resolution is ignored on laptop
 surface = py_compile.display.set_mode((640, 480))
-clock = py_compile.time.Clock()
+clock = py_compile.time.Clock()  
 surfrect = surface.get_rect()
 rect = py_compile.Rect((0,0), (128 , 128))
 rect.center = (surfrect . w // 2, surfrect.h // 2)
