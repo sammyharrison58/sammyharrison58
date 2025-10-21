@@ -1,0 +1,610 @@
+<!DOCTYPE html> 
+<html>  
+<head>
+    <title>NOBLESSE.co.ke</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            font-size: 20px;
+               }
+               
+nav .nice{
+    margin-right: 50px;
+    background-color: #5f1c14;;;
+    color: rgb(14, 15, 15);
+    align-items: center;
+    font-size: 20px;
+}
+               
+     .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Arial, "Algerian", Helvetica, sans-serif;
+        }
+        .item {
+            display: flex;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .item img {
+            width: 30%;
+            height: auto;
+            object-fit: cover;
+        }
+        .item .text {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23c0392b" width="1200" height="800"/><circle fill="%23e74c3c" cx="300" cy="300" r="150"/><circle fill="%23f39c12" cx="900" cy="400" r="100"/><rect fill="%232c3e50" x="200" y="500" width="200" height="150"/><rect fill="%231e3799" x="700" y="550" width="150" height="100"/></svg>') center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: black;
+            font-family: "Algerian",serif !important;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background: #e74c3c;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #c0392b;
+       
+        }
+        .section {
+            padding: 4rem 0;
+        }
+        .about {
+            background: #f8f9fa;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        .menu-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .menu-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .menu-item h3 {
+            color: #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .contact1{
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            text-align: center;
+        }
+        footer {
+            background: #2e3124;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.2rem; }
+            .contact-info { flex-direction: column; gap: 1rem; }
+            }
+.contacts{
+    margin-top: 20px;
+}
+.contacts i{
+    padding: 10px;
+    /* border: 2px solid red; */
+    color: white;
+    background: darkgray;
+    margin-bottom: 10px;
+    /* gap: 15px; */
+    
+}
+.contacts i a{
+    /* border: 2px solid red; */
+    color: chocolate;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 10px ;
+    font-size: 20px;
+    /* gap: 15px; */
+}
+    .image-row {
+            display: flex;
+            justify-content: space-between; /* Evenly spaces images */
+            gap: 10px; /* Adds space between images */
+        }
+        .image-row img {
+            width: 300px; /* Adjust width as needed */
+            height: auto; /* Maintains aspect ratio */
+
+            .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Arial, "Algerian", Helvetica, sans-serif;
+       }
+         .cotaner {
+            background: rgb(95, 109, 101);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(238, 28, 28, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+            background-color: #333;
+        }
+        .order-item {
+            background: #e3f2fd;
+            border: 2px solid #2196f3;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            cursor: move;
+            user-select: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .order-item:hover {
+            background: #bbdefb;
+            transform: translateY(-2px);
+        }
+        .order-item.dragging {
+            opacity: 0.5;
+            transform: rotate(5deg);
+        }
+        .order-item.selected {
+            background: #fff3e0;
+            border-color: #ff9800;
+        }
+        .order-sequence {
+            background: #f1f8e9;
+            border: 2px dashed #4caf50;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 100px;
+            margin: 20px 0;
+        }
+        .sequence-item {
+            background: #c8e6c9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .remove-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .btn {
+            background: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        .btn-danger {
+            background: #f44336;
+        }
+        .btn-danger:hover {
+            background: #da190b;
+        }
+        #orderDisplay {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        }
+
+
+    </style>
+</head>
+
+ <h5> <style> 
+h5 {text-align: center;
+color:black;
+font-size: 50px;
+background-color: #5f1c14;;
+width: 100%;
+height: 100%;
+font-family: "Algerian", serif !important;
+}
+</style>
+<marquee direction="right"><img src="nice.jpg",alt="description of image" width="90px"> OUR ORDERS AT HARRIS APEX.COM</marquee>
+</h5>
+<body>
+
+
+     <header class="hero">
+        <h1>Harris Apex</h1>
+        <p>Most Delicious Cuisine in the Heart of the City</p>
+        <a href="#menu" class="btn">You can order with us</a><br>
+       <center><img src="men.jpg"alt="description of image" width="400px"</center>
+     
+    </header>
+    <hr>
+        <style>
+            hr{
+                font-family: "Algerian"serif,!important;
+                font-size: 30PX;
+                text-align: center;
+
+
+
+            }
+
+
+
+
+        </style><center>WOULD YOU LIKE TO ORDER WITH US!</center>
+
+    <hr>
+     </div>
+    <center> <nav>
+     <div class="nice">
+       <button>SIGHN IN</button>
+        <input
+         placeholder="Enter your email"
+         class="form-input flex w-half min-w-0 flex-0.5 resize-none overflow-hidden rounded-x0.5 text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-full placeholder:text-[#637588] px-[15px] rounded-r-none border-r-0 pr-1 rounded-0.5-none border-0.5-0 pl-1 text-sm font-normal leading-normal @[480px]:text-base @[360px]:font-normal @[360px]:leading-normal"
+             value=""  
+                     />
+        
+                   
+    </div>
+     </nav>
+     <nav>
+    <div class="nice">
+        <button>LOG IN </button>
+        <input
+         placeholder="Enter your email"
+         class="form-input flex w-half min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-full placeholder:text-[#637588] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[3600px]:font-normal @[3600px]:leading-normal"
+             value=""  
+                     />
+    </div>
+    </nav>
+    <nav>
+    <div class="nice">
+        <button>FULL NAME</button>
+        <input
+         placeholder="Enter your name"
+         class="form-input flex w-half min-w-0 flex-2 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-full placeholder:text-[#637588] px-[20px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[3600px]:font-normal @[3600px]:leading-normal"
+             value=""  
+                     />
+    </div></nav>
+     <nav>
+    <div class="nice">
+        <button>ORDER</button>
+        <input
+         placeholder="What would you like to order from us?"
+         class="form-input flex w-half min-w-0 flex-3 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-full placeholder:text-[#637588] px-[30px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[720px]:text-base @[3600px]:font-normal @[3600px]:leading-normal"
+             value=""  
+                     />
+                    
+    </div></nav>
+      <nav>
+    <div class="nice">
+        <button>ENTER</button>
+       
+                    
+    </div></nav></nav>
+     <div class="cotaner">
+        <h1>Custom Order Builder</h1>
+        <p>Drag items from the menu to create your order sequence, or use the buttons to add/remove items.</p>
+        
+        <div class="buttons-grid" id="menuItems">
+            <div class="order-item" draggable="true" data-item="burger">🍔 Burger</div>
+            <div class="order-item" draggable="true" data-item="fries">🍟 Fries</div>
+            <div class="order-item" draggable="true" data-item="soda">🥤 Soda</div>
+            <div class="order-item" draggable="true" data-item="salad">🥗 Salad</div>
+            <div class="order-item" draggable="true" data-item="pizza">🍕 Pizza</div>
+            <div class="order-item" draggable="true" data-item="icecream">🍦 Ice Cream</div>
+        </div>
+
+        <div class="order-sequence" id="orderSequence">
+            <h3>Your Order Sequence:</h3>
+            <div id="sequenceList"></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="clearOrder()">Clear Order</button>
+            <button class="btn" onclick="randomOrder()">Random Order</button>
+            <button class="btn" onclick="saveOrder()">Save Order</button>
+        </div>
+
+        <div id="orderDisplay">
+            Order Summary: <span id="orderSummary">Empty</span>
+        </div>
+    </div>
+
+    <script>
+        let draggedItem = null;
+
+        // Drag and Drop functionality
+        document.querySelectorAll('.order-item').forEach(item => {
+            item.addEventListener('dragstart', (e) => {
+                draggedItem = e.target;
+                e.target.classList.add('dragging');
+            });
+
+            item.addEventListener('dragend', (e) => {
+                e.target.classList.remove('dragging');
+            });
+        });
+
+        const orderSequence = document.getElementById('orderSequence');
+        orderSequence.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        });
+
+        orderSequence.addEventListener('drop', (e) => {
+            e.preventDefault();
+            if (draggedItem) {
+                const itemData = draggedItem.dataset.item;
+                const itemText = draggedItem.textContent;
+                addToSequence(itemData, itemText);
+                draggedItem.classList.remove('selected');
+            }
+        });
+
+        // Click to add functionality
+        document.querySelectorAll('.order-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const itemData = item.dataset.item;
+                const itemText = item.textContent;
+                addToSequence(itemData, itemText);
+                item.classList.add('selected');
+                setTimeout(() => item.classList.remove('selected'), 300);
+            });
+        });
+
+        function addToSequence(itemData, itemText) {
+            const sequenceList = document.getElementById('sequenceList');
+            const newItem = document.createElement('div');
+            newItem.className = 'sequence-item';
+            newItem.innerHTML = `
+                <span>${itemText}</span>
+                <button class="remove-btn" onclick="removeFromSequence(this)">×</button>
+            `;
+            newItem.dataset.item = itemData;
+            sequenceList.appendChild(newItem);
+            updateOrderSummary();
+        }
+
+        function removeFromSequence(button) {
+            button.parentElement.remove();
+            updateOrderSummary();
+        }
+
+        function updateOrderSummary() {
+            const sequenceItems = document.querySelectorAll('.sequence-item');
+            const summary = sequenceItems.length > 0 
+                ? Array.from(sequenceItems).map(item => item.dataset.item).join(' → ') 
+                : 'Empty';
+            document.getElementById('orderSummary').textContent = summary;
+        }
+
+        function clearOrder() {
+            document.getElementById('sequenceList').innerHTML = '';
+            updateOrderSummary();
+        }
+
+        function randomOrder() {
+            clearOrder();
+            const menuItems = document.querySelectorAll('.order-item');
+            const randomItems = Array.from(menuItems)
+                .sort(() => Math.random() - 0.5)
+                .slice(0, Math.floor(Math.random() * 4) + 1);
+            
+            randomItems.forEach(item => {
+                const itemData = item.dataset.item;
+                const itemText = item.textContent;
+                addToSequence(itemData, itemText);
+            });
+        }
+
+        function saveOrder() {
+            const sequenceItems = document.querySelectorAll('.sequence-item');
+            const order = Array.from(sequenceItems).map(item => ({
+                name: item.dataset.item,
+                display: item.querySelector('span').textContent
+            }));
+            
+            if (order.length === 0) {
+                alert('Order is empty! Add some items first.');
+                return;
+            }
+            
+            const orderString = JSON.stringify(order, null, 2);
+            alert('Order saved!\n\n' + orderString);
+            console.log('Saved Order:', order);
+        }
+
+        // Allow reordering within the sequence by dragging sequence items
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new MutationObserver(() => {
+                document.querySelectorAll('.sequence-item').forEach(item => {
+                    item.draggable = true;
+                    item.addEventListener('dragstart', (e) => {
+                        draggedItem = e.target;
+                        e.target.style.opacity = '0.5';
+                    });
+                    item.addEventListener('dragend', (e) => {
+                        e.target.style.opacity = '1';
+                    });
+                    item.addEventListener('dragover', (e) => e.preventDefault());
+                    item.addEventListener('drop', (e) => {
+                        e.preventDefault();
+                        if (draggedItem && draggedItem !== e.target) {
+                            e.target.parentNode.insertBefore(draggedItem, e.target.nextSibling || null);
+                        }
+                        updateOrderSummary();
+                    });
+                });
+            });
+            observer.observe(document.getElementById('sequenceList'), { childList: true });
+        });
+    </script>
+</center>
+  <center><img src="men.jpg"alt="description of image" width="550px"</center>
+   <hr>
+        <style>
+            hr{
+                font-family: "Algerian"serif,!important;
+                font-size: 30PX;
+                text-align: center;
+
+
+
+            }
+
+
+
+
+        </style><center>THANK YOU FOR ORDERING WITH US!</center>
+
+    <hr>
+
+        
+</body>
+    <footer>
+    <center>
+         <div class="contacts">
+            <div class="text-[#637588]" data-icon="FacebookLogo" data-size="24px" data-weight="regular"> </div>
+            <i class="fa-regular fa-envelope"><a href="#">admin@Father_Looks@gmail.com</a></i>
+            <i class="fa-solid fa-phone"><a href="#">Telephone:+(254)748082906</a></i>
+            <i class="fa-solid fa-s"><a href="#">live:Noblesse </a></i> <br>
+        </div>
+    <i class="fa-regular fa-envelope"><a href="#"></a> @gmail: Noblesse36@gmail.com<br>
+    Instagram: @Noblesse36<br>
+    <right>Telephone:0790541823</right><br>
+    @Father_LooksThemes<br>
+    @ All  rights reserved!.Father_looks. 
+     <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#637588]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#637588]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                 <a href="#">
+                  <div class="text-[#637588]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+
+    </center>
+</footer>
+</html>

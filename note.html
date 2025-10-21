@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Order Entry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .contaner {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .order-item {
+            background: #e3f2fd;
+            border: 2px solid #2196f3;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            cursor: move;
+            user-select: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .order-item:hover {
+            background: #bbdefb;
+            transform: translateY(-2px);
+        }
+        .order-item.dragging {
+            opacity: 0.5;
+            transform: rotate(5deg);
+        }
+        .order-item.selected {
+            background: #fff3e0;
+            border-color: #ff9800;
+        }
+        .order-sequence {
+            background: #f1f8e9;
+            border: 2px dashed #4caf50;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 100px;
+            margin: 20px 0;
+        }
+        .sequence-item {
+            background: #c8e6c9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .remove-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .btn {
+            background: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        .btn-danger {
+            background: #f44336;
+        }
+        .btn-danger:hover {
+            background: #da190b;
+        }
+        #orderDisplay {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaner">
+        <h1>Custom Order Builder</h1>
+        <p>Drag items from the menu to create your order sequence, or use the buttons to add/remove items.</p>
+        
+        <div class="buttons-grid" id="menuItems">
+            <div class="order-item" draggable="true" data-item="burger">🍔 Burger</div>
+            <div class="order-item" draggable="true" data-item="fries">🍟 Fries</div>
+            <div class="order-item" draggable="true" data-item="soda">🥤 Soda</div>
+            <div class="order-item" draggable="true" data-item="salad">🥗 Salad</div>
+            <div class="order-item" draggable="true" data-item="pizza">🍕 Pizza</div>
+            <div class="order-item" draggable="true" data-item="icecream">🍦 Ice Cream</div>
+        </div>
+
+        <div class="order-sequence" id="orderSequence">
+            <h3>Your Order Sequence:</h3>
+            <div id="sequenceList"></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="clearOrder()">Clear Order</button>
+            <button class="btn" onclick="randomOrder()">Random Order</button>
+            <button class="btn" onclick="saveOrder()">Save Order</button>
+        </div>
+
+        <div id="orderDisplay">
+            Order Summary: <span id="orderSummary">Empty</span>
+        </div>
+    </div>
+
+    <script>
+        let draggedItem = null;
+
+        // Drag and Drop functionality
+        document.querySelectorAll('.order-item').forEach(item => {
+            item.addEventListener('dragstart', (e) => {
+                draggedItem = e.target;
+                e.target.classList.add('dragging');
+            });
+
+            item.addEventListener('dragend', (e) => {
+                e.target.classList.remove('dragging');
+            });
+        });
+
+        const orderSequence = document.getElementById('orderSequence');
+        orderSequence.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        });
+
+        orderSequence.addEventListener('drop', (e) => {
+            e.preventDefault();
+            if (draggedItem) {
+                const itemData = draggedItem.dataset.item;
+                const itemText = draggedItem.textContent;
+                addToSequence(itemData, itemText);
+                draggedItem.classList.remove('selected');
+            }
+        });
+
+        // Click to add functionality
+        document.querySelectorAll('.order-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const itemData = item.dataset.item;
+                const itemText = item.textContent;
+                addToSequence(itemData, itemText);
+                item.classList.add('selected');
+                setTimeout(() => item.classList.remove('selected'), 300);
+            });
+        });
+
+        function addToSequence(itemData, itemText) {
+            const sequenceList = document.getElementById('sequenceList');
+            const newItem = document.createElement('div');
+            newItem.className = 'sequence-item';
+            newItem.innerHTML = `
+                <span>${itemText}</span>
+                <button class="remove-btn" onclick="removeFromSequence(this)">×</button>
+            `;
+            newItem.dataset.item = itemData;
+            sequenceList.appendChild(newItem);
+            updateOrderSummary();
+        }
+
+        function removeFromSequence(button) {
+            button.parentElement.remove();
+            updateOrderSummary();
+        }
+
+        function updateOrderSummary() {
+            const sequenceItems = document.querySelectorAll('.sequence-item');
+            const summary = sequenceItems.length > 0 
+                ? Array.from(sequenceItems).map(item => item.dataset.item).join(' → ') 
+                : 'Empty';
+            document.getElementById('orderSummary').textContent = summary;
+        }
+
+        function clearOrder() {
+            document.getElementById('sequenceList').innerHTML = '';
+            updateOrderSummary();
+        }
+
+        function randomOrder() {
+            clearOrder();
+            const menuItems = document.querySelectorAll('.order-item');
+            const randomItems = Array.from(menuItems)
+                .sort(() => Math.random() - 0.5)
+                .slice(0, Math.floor(Math.random() * 4) + 1);
+            
+            randomItems.forEach(item => {
+                const itemData = item.dataset.item;
+                const itemText = item.textContent;
+                addToSequence(itemData, itemText);
+            });
+        }
+
+        function saveOrder() {
+            const sequenceItems = document.querySelectorAll('.sequence-item');
+            const order = Array.from(sequenceItems).map(item => ({
+                name: item.dataset.item,
+                display: item.querySelector('span').textContent
+            }));
+            
+            if (order.length === 0) {
+                alert('Order is empty! Add some items first.');
+                return;
+            }
+            
+            const orderString = JSON.stringify(order, null, 2);
+            alert('Order saved!\n\n' + orderString);
+            console.log('Saved Order:', order);
+        }
+
+        // Allow reordering within the sequence by dragging sequence items
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new MutationObserver(() => {
+                document.querySelectorAll('.sequence-item').forEach(item => {
+                    item.draggable = true;
+                    item.addEventListener('dragstart', (e) => {
+                        draggedItem = e.target;
+                        e.target.style.opacity = '0.5';
+                    });
+                    item.addEventListener('dragend', (e) => {
+                        e.target.style.opacity = '1';
+                    });
+                    item.addEventListener('dragover', (e) => e.preventDefault());
+                    item.addEventListener('drop', (e) => {
+                        e.preventDefault();
+                        if (draggedItem && draggedItem !== e.target) {
+                            e.target.parentNode.insertBefore(draggedItem, e.target.nextSibling || null);
+                        }
+                        updateOrderSummary();
+                    });
+                });
+            });
+            observer.observe(document.getElementById('sequenceList'), { childList: true });
+        });
+    </script>
+</body>
+</html>
