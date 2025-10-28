@@ -19,7 +19,7 @@
 <p align="left">
 <a href="https://twitter.com/@SHL_EMPIRE" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@SHL_EMPIRE" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/sammy harrison" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sammy harrison" height="30" width="40" /></a>
-<a href="https://fb.com/sammy harrison.co" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="bendypixels.co" height="30" width="40" /></a>
+<a href="https://fb.com/sammy harrison.co" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="sammyharrison.co" height="30" width="40" /></a>
 <a href="https://instagram.com/father_looks1.co" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="father_looks1.co" height="30" width="40" /></a>
 </p>
 
