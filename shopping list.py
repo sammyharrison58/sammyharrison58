@@ -9,7 +9,7 @@ else:
     print("please enter the item you would like to buy: ")
 print("🛒 Welcome to Python Shop!")
 
-# Ask how many items the user wants to buy
+# Ask how many items the user wants t
 num_items = int(input("How many items would you like to buy? "))
 
 # Create an empty list to store the items
