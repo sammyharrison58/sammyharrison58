@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Sammy Harrison</h1>
+<h1 align="center">Hi 👋, I'm Father_Looks</h1>
 <h3 align="center">exploring the world of code, design, and data science.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=sammyharrison58&label=Profile%20views&color=0e75b6&style=flat" alt="sammyharrison" /> </p>
@@ -42,6 +42,7 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sammyharrison58&show_icons=true&locale=en" alt="sammyharrison" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sammyharrison58&" alt="sammyharrison" /></p>
+
 
 
 
