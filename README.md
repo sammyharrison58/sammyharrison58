@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning **Data science**
 
-- 👨‍💻 All of my projects are available at [https://sammyharrison58.github.io/professional-portfolio/](https://sammyharrison58.github.io/professional-portfolio/)
+- 👨‍💻 All of my projects are available at [https://sammyharrison58.github.io/portfolio](https://sammyharrison58.github.io/portfolio)
 
 - 📫 How to reach me **sammyharrison58@gmail.com**
 
