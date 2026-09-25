@@ -5,7 +5,7 @@
   <img src="https://komarev.com/ghpvc/?username=sammyharrison58&label=Profile%20views&color=0e75b6&style=flat" alt="sammyharrison58" />
 </p>
 
-<!-- Trophies (working mirror) -->
+
 <p align="left">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
     <img src="https://github-profile-trophy.screw-hand.vercel.app/?username=sammyharrison58" alt="sammyharrison58" />
@@ -74,16 +74,15 @@
   </a>
 </p>
 
-<!-- Stats + Top Languages (working alternative) -->
-<p align="center">
+
+<p align="left">
   <img src="https://edge-readme-stats.dancodes.online/stats?username=sammyharrison58&show_icons=true" alt="GitHub Stats" />
 </p>
 
-<p align="center">
+<p align="left">
   <img src="https://edge-readme-stats.dancodes.online/langs?username=sammyharrison58&layout=compact" alt="Top Languages" />
 </p>
 
-<!-- Streak (still working) -->
-<p align="center">
+<p align="left">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=sammyharrison58" alt="GitHub Streak" />
 </p>
